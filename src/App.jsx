@@ -56,7 +56,7 @@ function Home() {
             {
                 Array(10).fill(0).map((_, i)=>
                     <div key={i} id={'stage'+(i+1)} className="stage">
-                      <Link to={`/Sokoban/game/${'stage'+(i+1)}`}>
+                      <Link to={`/Sokoban/Game/${'stage'+(i+1)}`}>
                         {'Stage '+(i+1)}
                       </Link>
                     </div>
