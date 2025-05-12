@@ -17,13 +17,13 @@ function MyRouteApp() {
     <>
       <RecordsContext.Provider value = {[records, setRecords]}>
         <Routes>
-          <Route path="/" element={
+          <Route path="/Sokoban/" element={
               <Home />} />
-          <Route path="/Game/:stageName" element={
+          <Route path="/Sokoban/Game/:stageName" element={
               <Game />} />
-          <Route path="/Records" element={
+          <Route path="/Sokoban/Records" element={
               <Records />} />
-          <Route path="/About" element={
+          <Route path="/Sokoban/About" element={
               <About />} />
           <Route path="*" element={<My404 />} />
         </Routes>
@@ -37,9 +37,9 @@ function NavBar() {
   return (
     <>
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/Records">Records</Link>
-        <Link to="/About">About</Link>
+        <Link to="/Sokoban/">Home</Link>
+        <Link to="/Sokoban/Records">Records</Link>
+        <Link to="/Sokoban/About">About</Link>
       </div>
       <hr />
     </>
