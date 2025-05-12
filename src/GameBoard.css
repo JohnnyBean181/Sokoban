@@ -1,0 +1,68 @@
+.gameboard { /* container for squares */
+    padding: 20px;
+    display: grid;
+    grid-gap: 0px;
+    position: relative;
+    margin: 2px auto;
+}
+
+.square {
+    border: 1px solid;
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+.v {  /* vacant: outside the wall */
+    background-image: url("./assets/i7.gif");
+}
+
+.w {  /* wall */
+    background-image: url("./assets/i2.gif");
+}
+
+.f {  /* floor */
+    background-image: url("./assets/i0.gif");
+}
+
+.p {  /* point : target place */
+    background-image: url("./assets/i1.gif");
+}
+
+.f.c {  /* floor + crate */
+    background-image: url("./assets/i3.gif");
+}
+
+.p.c {  /* point + crate */
+    background-image: url("./assets/i4.gif");
+}
+
+.f.e {  /* floor + employee */
+    background-image: url("./assets/i5.gif");
+}
+
+.p.e {  /* point + employee */
+    background-image: url("./assets/i6.gif");
+}
+
+.noShow {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.gameboard {
+    flex: 0 0 70%;
+}
+
+.stats {
+    flex: 1;
+}
+  
+button {
+    width: 140px;
+    background-color: lightgray;
+    font-size: 18px;
+}

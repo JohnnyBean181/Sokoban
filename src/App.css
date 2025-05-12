@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+body, html {padding: 0px; font-size: 30px}
+
+h2 {
+  margin: 0px;
+}
+
+header {
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 10px; 
+}
+
+.links a {
+  flex: 1;
+}
+
+.container {
+  display: flex;  
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center; 
+  align-items: center;
+}
+
+hr {
+  height: 1px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+.menu { /* container for menu */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  grid-template-rows: repeat(2, 140px);
+  width: 1000px;
+  grid-gap: 20px;
+  position: relative;
+  margin: 2px auto;
+  align-items: center;
+}
+
+.stage {  
+  display: flex;
+  height: 100%;
+  padding: 0px;
+  background-image:
+  linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+  url("./assets/crate.png");
+  background-size: 180px 140px;
+  background-position: center; 
+  justify-content: center;
+  align-items: center;
+}
+
+.homeWrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.stage a {
+  color: #aa2211;      
+}
